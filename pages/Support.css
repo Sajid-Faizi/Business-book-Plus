@@ -1,0 +1,266 @@
+/* =======================
+   HERO / TOP CONTAINER
+======================= */
+
+.Support-container {
+    text-align: center;
+    background-color: #002d77;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-shadow: 3px 3px 3px #201f1f;
+    padding: 80px 20px;
+
+    background-image: url("/images/grid-bg.svg");
+    background-repeat: repeat;
+    background-size: 120px 120px;
+    background-position: center;
+}
+
+.Support-container > p,
+.Support-container > h1 {
+    color: white;
+}
+
+
+/* =======================
+   BUTTON
+======================= */
+
+.bttn {
+    margin: 20px auto 0;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 15%);
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: fit-content;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    background: #f2b500;
+    color: #0e0d0d;
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 19px;
+}
+
+.bttn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =======================
+   HERO GRID SECTION
+======================= */
+
+.hero-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+/* =======================
+   SERVICE SECTION
+======================= */
+
+.child-container {
+    display: flex;
+}
+
+.child-service-card {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    margin-top: 20px;
+    background: white;
+    border-radius: 6px;
+    padding: 25px;
+    position: relative;
+    border-top: 4px solid #1976d2;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 20px 60px;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card > p {
+    color: #6b7280;
+}
+
+.service-card li {
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.service-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #1976d2;
+    font-weight: bold;
+}
+
+
+/* =======================
+   SERVICE ICON
+======================= */
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #1976d2, #0d47a1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon > h1 {
+    color: white;
+}
+
+
+/* =======================
+   PREMIUM SECTION
+======================= */
+
+.premium-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: rgb(231, 238, 242);
+    padding: 60px 20px;
+}
+
+/* LEFT CONTENT */
+.premium-content {
+    flex: 1;
+}
+
+/* LIST WRAPPER */
+.premium-container {
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.premium-container > div {
+    flex: 1;
+}
+
+/* TEXT STYLES */
+.premium-content h1 {
+    font-size: 2.8rem;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.premium-desc {
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.premium-tag {
+    color: #0065f2;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.premium-container li {
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+    color: #4b5563;
+}
+
+.premium-container li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: #1976d2;
+}
+
+/* =======================
+   IMAGE
+======================= */
+
+.premium-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.premium-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+.serviceText>p{
+    font-size: 0.85rem;
+    color: #0065f2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+.serviceText>h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #021440;
+    margin: 0;
+    line-height: 1.2;
+}
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+
+@media (max-width: 992px) {
+
+    .premium-section {
+        flex-direction: column;   
+        align-items: flex-start;
+    }
+
+    .premium-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .premium-container ul {
+        grid-template-columns: 1fr;
+    }
+
+    .premium-image {
+        margin-top: 40px;
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .premium-content h1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 992px) 
+{ .hero-container { grid-template-columns: 1fr; text-align: center; }}
+

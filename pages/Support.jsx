@@ -5,7 +5,7 @@ const Support = () => {
   return (
     <>
       <section>
-        <div className="container">
+        <div className="Support-container">
           <button
             style={{
               padding: "12px 35px",

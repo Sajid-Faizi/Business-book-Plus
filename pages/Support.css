@@ -2,7 +2,7 @@
    HERO / TOP CONTAINER
 ======================= */
 
-.container {
+.Support-container {
     text-align: center;
     background-color: #002d77;
     font-size: 1.2rem;
@@ -16,8 +16,8 @@
     background-position: center;
 }
 
-.container > p,
-.container > h1 {
+.Support-container > p,
+.Support-container > h1 {
     color: white;
 }
 
